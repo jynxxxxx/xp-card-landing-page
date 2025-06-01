@@ -28,7 +28,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center mt-8 px-4 relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-72 h-72 bg-gaming-purple/20 rounded-full blur-3xl animate-pulse"></div>
