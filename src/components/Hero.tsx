@@ -3,11 +3,12 @@ import { useState } from 'react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { toast } from '@/hooks/use-toast';
+import { supabase } from '@/integrations/supabase/client';
 
 const Hero = () => {
   const [email, setEmail] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async(e: React.FormEvent) => {
     e.preventDefault();
     if (!email) {
       toast({
@@ -18,8 +19,19 @@ const Hero = () => {
       return;
     }
     
-    // Here we would normally save to Supabase
-    console.log('Email signup:', email);
+    const { error } = await supabase
+      .from("game_waitlist")
+      .insert({ email });
+
+    if (error) {
+      toast({
+        title: "오류 발생",
+        description: error.message,
+        variant: "destructive",
+      });
+      return;
+    }
+
     toast({
       title: "알림 신청 완료!",
       description: "XP카드 출시 소식을 가장 먼저 알려드릴게요.",
