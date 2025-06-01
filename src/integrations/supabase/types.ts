@@ -9,7 +9,7 @@ export type Json =
 export type Database = {
   public: {
     Tables: {
-      waitlist: {
+      game_waitlist: {
         Row: {
           id: string;
           email: string;
