@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { toast } from '@/hooks/use-toast';
@@ -7,6 +7,19 @@ import { supabase } from '@/integrations/supabase/client';
 
 const Hero = () => {
   const [email, setEmail] = useState('');
+  const [isSpinning, setIsSpinning] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsSpinning(true);
+  };
+
+  // Reset spinning state after animation duration (e.g., 1s)
+  useEffect(() => {
+    if (isSpinning) {
+      const timeout = setTimeout(() => setIsSpinning(false), 1000);
+      return () => clearTimeout(timeout);
+    }
+  }, [isSpinning]);
 
   const handleSubmit = async(e: React.FormEvent) => {
     e.preventDefault();
@@ -65,8 +78,8 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="relative z-100">
-        <div className="animate-slide-up py-[7rem]">
+      <div className="relative z-10">
+        <div className="animate-slide-up py-[8rem]">
           <div className="w-[100vw] grid grid-cols-1 md:grid-cols-2 mx-[2rem]">
             {/* Logo/Brand */}
             <div className='flex flex-col pl-12 pr-8'>
@@ -75,7 +88,7 @@ const Hero = () => {
                   XP카드
                 </h1>
                 <p className="text-xl md:text-2xl text-gaming-purple-light font-medium">
-                  게임 유저를 위한 리워드 카드
+                  게이머들을 위한 단 하나의 강력한 신용카드
                 </p>
                 <p className="text-sm text-gray-400 mt-2">
                   🎮 소환사부터 수호자까지, 모든 게이머를 위한 카드
@@ -108,16 +121,18 @@ const Hero = () => {
 
             {/* Card Mockup */}
             <div className="flex pl-8 justify-center items-center mt-[-5rem]">
-              <div className="relative w-80 h-48 md:w-96 md:h-auto">
+              <div className="relative w-80 h-48 md:w-96 md:h-auto" onMouseEnter={handleMouseEnter}>
+                {/* Glow effect */}
+                <div 
+                  className="z-0 absolute inset-0 bg-gradient-to-r from-gaming-purple/30 to-gaming-cyan/30 blur-xl rounded-2xl animate-glow"
+                ></div>
                 <img
                   src="/card.png"
                   alt="XP카드"
-                  className="w-80 h-48 md:w-96 md:h-auto rounded-2xl object-cover animate-cardfloat neon-border"
+                  className={`z-11 w-80 h-48 md:w-96 md:h-auto rounded-2xl object-cover neon-border animate-cardfloat ${
+                    isSpinning ? 'animate-spin-y' : ''
+                  }`}
                 />
-                {/* Glow effect */}
-                <div 
-                  className="absolute inset-0 bg-gradient-to-r from-gaming-purple/30 to-gaming-cyan/30 blur-xl rounded-2xl animate-glow -z-10"
-                ></div>
               </div>
             </div>
           </div>

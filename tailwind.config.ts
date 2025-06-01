@@ -116,7 +116,6 @@ export default {
 						transform: 'rotate(18deg)'
 					}
 				},
-
 				'glow': {
 					'0%, 100%': {
 						transform: 'rotate(18deg)',
@@ -126,6 +125,10 @@ export default {
 						transform: 'rotate(18deg)',
 						boxShadow: '0 0 40px #8B5CF6, 0 0 60px #06B6D4'
 					}
+				},
+				'spin-y': {
+					'0%': { transform: 'rotate(18deg) rotateY(0deg)' },
+					'100%': { transform: 'rotate(18deg) rotateY(1800deg)' }, // 5 full spins
 				},
 				'slide-up': {
 					'0%': {
@@ -145,6 +148,7 @@ export default {
 				'cardfloat': 'cardfloat 6s ease-in-out infinite',
 				'glow': 'glow 3s ease-in-out infinite',
 				'slide-up': 'slide-up 0.8s ease-out',
+				'spin-y': 'spin-y 1s ease-in-out',
 			}
 		}
 	},

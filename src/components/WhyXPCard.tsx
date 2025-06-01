@@ -94,7 +94,7 @@ const WhyXPCard = () => {
           <div className="glass-effect rounded-2xl p-8">
             <div className="text-4xl font-bold gradient-text mb-2">24/7</div>
             <div className="text-gray-300">게이머 전용 고객지원</div>
-            <div className="text-xs text-gaming-purple-light mt-1">🛡️ 수호자급 서포트</div>
+            <div className="text-xs text-gaming-purple-light mt-1">🛡️ 탱커급 서포트</div>
           </div>
         </div>
       </div>

@@ -15,8 +15,8 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-8 md:mb-0">
-            <div className="text-3xl font-bold gradient-text mb-2">XP카드</div>
-            <p className="text-gray-400">게임 유저를 위한 리워드 카드</p>
+            <div className="text-3xl font-bold gradient-text mb-2">XP Card</div>
+            <p className="text-gray-400">모든 게이머들을 위한 단 하나의 리워드 카드 </p>
             <p className="text-xs text-gaming-purple mt-1">
               🏆 From Noob to Pro, 모든 게이머와 함께
             </p>
