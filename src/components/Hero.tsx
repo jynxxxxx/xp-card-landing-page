@@ -82,8 +82,8 @@ const Hero = () => {
       </div>
 
       <div className="relative z-10">
-        <div className="animate-slide-up py-[6rem]">
-          <div className="w-[100vw] grid grid-cols-1 md:grid-cols-2 mx-[2rem] md:ml-[2rem] md:mr-[5rem]">
+        <div className="animate-slide-up py-[6rem] md:py-[8rem]">
+          <div className="w-screen grid grid-cols-1 mx-[2rem] md:grid-cols-2 md:pl-[2rem] md:pr-[5rem]">
             {/* Logo/Brand */}
             <div className='flex flex-col px-8 md:pl-12 md:pr-8'>
               <div>
