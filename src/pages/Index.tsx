@@ -12,7 +12,7 @@ const Index = () => {
       <Header />
       <Hero />
       <WhyXPCard />
-      <CardPreview />
+      {/* <CardPreview /> */}
       {/* <CommunityHook /> */}
       <Footer />
     </div>
