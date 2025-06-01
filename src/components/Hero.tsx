@@ -67,9 +67,9 @@ const Hero = () => {
 
       <div className="relative z-100">
         <div className="animate-slide-up py-[7rem]">
-          <div className="w-[100vw] grid grid-cols-1 md:grid-cols-2 gap-8 ">
+          <div className="w-[100vw] grid grid-cols-1 md:grid-cols-2 mx-[2rem]">
             {/* Logo/Brand */}
-            <div className='flex flex-col pl-12'>
+            <div className='flex flex-col pl-12 pr-8'>
               <div>
                 <h1 className="text-6xl md:text-8xl font-bold gradient-text mb-4">
                   XP카드
@@ -83,7 +83,7 @@ const Hero = () => {
               </div>
               <div>
                 {/* Email Signup Form */}
-                <form onSubmit={handleSubmit} className="max-w-md mx-auto pt-12">
+                <form onSubmit={handleSubmit} className="pt-12">
                   <div className="flex flex-col sm:flex-row gap-4">
                     <Input
                       type="email"
@@ -107,12 +107,12 @@ const Hero = () => {
             </div>
 
             {/* Card Mockup */}
-            <div className="flex pl-8 items-center mt-[-5rem]">
-              <div className="relative w-80 h-48 md:w-80 md:h-auto">
+            <div className="flex pl-8 justify-center items-center mt-[-5rem]">
+              <div className="relative w-80 h-48 md:w-96 md:h-auto">
                 <img
                   src="/card.png"
                   alt="XP카드"
-                  className="w-80 h-48 md:w-80 md:h-auto rounded-2xl object-cover animate-cardfloat neon-border"
+                  className="w-80 h-48 md:w-96 md:h-auto rounded-2xl object-cover animate-cardfloat neon-border"
                 />
                 {/* Glow effect */}
                 <div 
