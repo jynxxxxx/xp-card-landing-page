@@ -82,7 +82,7 @@ const Hero = () => {
         <div className="animate-slide-up py-[8rem]">
           <div className="w-[100vw] grid grid-cols-1 md:grid-cols-2 mx-[2rem]">
             {/* Logo/Brand */}
-            <div className='flex flex-col pl-12 pr-8'>
+            <div className='flex flex-col px-8 md:pl-12 md:pr-8'>
               <div>
                 <h1 className="text-6xl md:text-8xl font-bold gradient-text mb-4">
                   XP카드
@@ -120,7 +120,7 @@ const Hero = () => {
             </div>
 
             {/* Card Mockup */}
-            <div className="flex pl-8 justify-center items-center mt-[-5rem]">
+            <div className="flex justify-center items-center pt-[8rem] pb-[5rem] md:py-0 md:pl-8 md:mt-[-5rem]">
               <div className="relative w-80 h-48 md:w-96 md:h-auto" onMouseEnter={handleMouseEnter}>
                 {/* Glow effect */}
                 <div 
@@ -138,9 +138,9 @@ const Hero = () => {
           </div>
 
           {/* Value Proposition */}
-          <div className="text-center mb-8 mt-12 md:mt-20">
+          <div className="text-center px-12 mb-8 mt-12 md:mt-28">
             <h2 className="text-2xl md:text-4xl font-bold text-white mb-4">
-              Steam, PlayStation, 네이버 게임, 구글플레이에서
+              Steam, PlayStation, Riot, 구글플레이에서
             </h2>
             <p className="text-3xl md:text-5xl font-bold gradient-text">
               최대 10% 캐시백
@@ -149,10 +149,6 @@ const Hero = () => {
               RP 충전도, V-Buck 구매도, 모든 게임 결제에서 리워드! 💰
             </p>
           </div>
-
-          
-
-
         </div>
       </div>
     </section>
