@@ -22,7 +22,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
+          {/* <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
             <div className="text-gray-400 text-center md:text-left">
               <div className="mb-2">문의: support@xpcard.kr</div>
               <div className="mb-1">사업자등록번호: 123-45-67890</div>
@@ -59,14 +59,14 @@ const Footer = () => {
                 <Mail className="w-5 h-5" />
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
-          <p>&copy; 2024 XP카드. All rights reserved. 게이머를 위한, 게이머에 의한 카드.</p>
-          <p className="text-xs text-gaming-purple-light mt-2">
+          <p>&copy; 2025 XP카드. All rights reserved. 게이머를 위한, 게이머에 의한 카드.</p>
+          {/* <p className="text-xs text-gaming-purple-light mt-2">
             🎮 마비노기, 리그 오브 레전드, 포트나이트 그리고 모든 게임과 함께
-          </p>
+          </p> */}
         </div>
       </div>
     </footer>

@@ -4,14 +4,16 @@ import WhyXPCard from '../components/WhyXPCard';
 import CardPreview from '../components/CardPreview';
 import CommunityHook from '../components/CommunityHook';
 import Footer from '../components/Footer';
+import Header from '@/components/Header';
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-gaming-dark">
+      <Header />
       <Hero />
       <WhyXPCard />
       <CardPreview />
-      <CommunityHook />
+      {/* <CommunityHook /> */}
       <Footer />
     </div>
   );

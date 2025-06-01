@@ -108,11 +108,22 @@ export default {
 						transform: 'translateY(-20px)'
 					}
 				},
+				'cardfloat': {
+					'0%, 100%': {
+						transform: 'rotate(18deg)'
+					},
+					'50%': {
+						transform: 'rotate(18deg)'
+					}
+				},
+
 				'glow': {
 					'0%, 100%': {
+						transform: 'rotate(18deg)',
 						boxShadow: '0 0 20px #8B5CF6'
 					},
 					'50%': {
+						transform: 'rotate(18deg)',
 						boxShadow: '0 0 40px #8B5CF6, 0 0 60px #06B6D4'
 					}
 				},
@@ -131,6 +142,7 @@ export default {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'float': 'float 6s ease-in-out infinite',
+				'cardfloat': 'cardfloat 6s ease-in-out infinite',
 				'glow': 'glow 3s ease-in-out infinite',
 				'slide-up': 'slide-up 0.8s ease-out',
 			}
