@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,6 +19,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'pretendard': ['Pretendard', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,6 +65,17 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				gaming: {
+					purple: '#8B5CF6',
+					'purple-dark': '#7C3AED',
+					'purple-light': '#A78BFA',
+					cyan: '#06B6D4',
+					'cyan-dark': '#0891B2',
+					'cyan-light': '#67E8F9',
+					dark: '#0F0F23',
+					'dark-lighter': '#1A1A2E',
+					'dark-card': '#16213E',
 				}
 			},
 			borderRadius: {
@@ -84,11 +99,40 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0px)'
+					},
+					'50%': {
+						transform: 'translateY(-20px)'
+					}
+				},
+				'glow': {
+					'0%, 100%': {
+						boxShadow: '0 0 20px #8B5CF6'
+					},
+					'50%': {
+						boxShadow: '0 0 40px #8B5CF6, 0 0 60px #06B6D4'
+					}
+				},
+				'slide-up': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(30px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 6s ease-in-out infinite',
+				'glow': 'glow 3s ease-in-out infinite',
+				'slide-up': 'slide-up 0.8s ease-out',
 			}
 		}
 	},
