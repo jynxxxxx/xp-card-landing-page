@@ -36,17 +36,27 @@ const WhyXPCard = () => {
   return (
     <section className="py-20 px-4 relative">
       {/* Character decorations */}
-      <div className="absolute top-10 left-10 opacity-10">
-        <div className="text-6xl animate-bounce">🐧</div>
-        <div className="text-xs text-center text-gaming-cyan mt-1">펭귄</div>
+      <div className="z-[1] absolute bottom-[32rem] left-4 opacity-40 md:top-10 md:left-[-1rem] md:opacity-50 lg:opacity-80">
+        <div className="w-auto h-60">
+          <img
+            src="/mabi.png"
+            alt="마비노기기"
+            className="w-full h-full object-cover"
+          />
+        </div>
       </div>
-      <div className="absolute top-20 right-20 opacity-10">
-        <div className="text-5xl animate-float">⚔️</div>
-        <div className="text-xs text-center text-gaming-purple mt-1">무기</div>
+      <div className="z-[1] absolute top-[-8rem] left-4 opacity-40 md:top-[-3.5rem] md:right-4 md:left-auto md:opacity-80">
+        <div className="w-[25rem] h-80">
+          <img
+            src="/lol.png" 
+            alt="league characters"
+            className="object-cover"
+          />
+        </div>
       </div>
 
-      <div className="container mx-auto">
-        <div className="text-center mb-16">
+      <div className="container mx-auto pt-[3rem] md:pt-0">
+        <div className="z-[10] relative text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             왜 <span className="gradient-text">XP카드</span>인가요?
           </h2>
@@ -56,7 +66,7 @@ const WhyXPCard = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="z-[10] relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {benefits.map((benefit, index) => (
             <div
               key={index}
@@ -80,7 +90,7 @@ const WhyXPCard = () => {
         </div>
 
         {/* Stats section with game references */}
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div className="z-[10] relative mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 text-center pt-16 md:pt-0">
           <div className="glass-effect rounded-2xl p-8">
             <div className="text-4xl font-bold gradient-text mb-2">10%</div>
             <div className="text-gray-300">최대 캐시백률</div>

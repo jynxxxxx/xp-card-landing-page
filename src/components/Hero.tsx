@@ -61,26 +61,29 @@ const Hero = () => {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gaming-purple/10 rounded-full blur-2xl animate-float"></div>
         
         {/* Game character silhouettes */}
-        <div className="absolute top-10 right-20 opacity-20">
-          <div className="w-32 h-40 bg-gradient-to-b from-gaming-purple to-transparent rounded-lg transform rotate-12 animate-float">
-            <div className="text-xs text-center pt-2 text-white/60">아리</div>
+        <div className="absolute right-0 top-[27rem] opacity-60 md:top-0 md:right-16 md:opacity-80">
+          <div className="w-auto h-60 overflow-hidden">
+            <img
+              src="/maple.png"  // Replace with your actual image path
+              alt="maple story characters"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
-        <div className="absolute bottom-32 left-20 opacity-15">
-          <div className="w-28 h-36 bg-gradient-to-b from-gaming-cyan to-transparent rounded-lg transform -rotate-6 animate-float delay-500">
-            <div className="text-xs text-center pt-2 text-white/60">Jinx</div>
+        {/* <div className="absolute bottom-72 left-[-2rem] md:bottom-32 md:left-12 opacity-80">
+          <div className="w-auto h-56 overflow-hidden">
+            <img
+              src="/lineage.png"  // Replace with your actual image path
+              alt="lineage"
+              className="w-full h-full object-cover"
+            />
           </div>
-        </div>
-        <div className="absolute top-1/3 left-10 opacity-10">
-          <div className="w-24 h-32 bg-gradient-to-b from-yellow-400/50 to-transparent rounded-lg transform rotate-3 animate-float delay-1000">
-            <div className="text-xs text-center pt-2 text-white/60">피오나</div>
-          </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="relative z-10">
-        <div className="animate-slide-up py-[8rem]">
-          <div className="w-[100vw] grid grid-cols-1 md:grid-cols-2 mx-[2rem]">
+        <div className="animate-slide-up py-[6rem]">
+          <div className="w-[100vw] grid grid-cols-1 md:grid-cols-2 mx-[2rem] md:ml-[2rem] md:mr-[5rem]">
             {/* Logo/Brand */}
             <div className='flex flex-col px-8 md:pl-12 md:pr-8'>
               <div>
@@ -120,7 +123,7 @@ const Hero = () => {
             </div>
 
             {/* Card Mockup */}
-            <div className="flex justify-center items-center pt-[8rem] pb-[5rem] md:py-0 md:pl-8 md:mt-[-5rem]">
+            <div className="flex justify-center items-center pt-[12rem] pb-[3rem] md:py-0 md:pl-8 md:mt-[-3rem]">
               <div className="relative w-80 h-48 md:w-96 md:h-auto" onMouseEnter={handleMouseEnter}>
                 {/* Glow effect */}
                 <div 
