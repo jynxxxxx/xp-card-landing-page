@@ -5,6 +5,7 @@ import CardPreview from '../components/CardPreview';
 import CommunityHook from '../components/CommunityHook';
 import Footer from '../components/Footer';
 import Header from '@/components/Header';
+import { Analytics } from "@vercel/analytics/react"
 
 const Index = () => {
   return (
@@ -15,6 +16,7 @@ const Index = () => {
       {/* <CardPreview /> */}
       {/* <CommunityHook /> */}
       <Footer />
+      <Analytics />
     </div>
   );
 };
