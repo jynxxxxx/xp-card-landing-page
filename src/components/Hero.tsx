@@ -143,7 +143,7 @@ const Hero = () => {
           {/* Value Proposition */}
           <div className="text-center px-12 mb-8 mt-12 md:mt-28">
             <h2 className="text-2xl md:text-4xl font-bold text-white mb-4">
-              Steam, PlayStation, Riot, 구글플레이에서
+              Steam, PlayStation, Riot, 구글플레이
             </h2>
             <p className="text-3xl md:text-5xl font-bold gradient-text">
               최대 3% 캐시백
