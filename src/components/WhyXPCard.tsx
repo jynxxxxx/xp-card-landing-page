@@ -5,7 +5,7 @@ const benefits = [
   {
     icon: CreditCard,
     title: '캐시백',
-    description: '게임 구매 시 최대 10% 현금 환급',
+    description: '게임 구매 시 최대 3% 현금 환급',
     highlight: '매월 자동 적립',
     gameRef: '🎮 RP, V-Buck, 루블 모두!'
   },
@@ -92,7 +92,7 @@ const WhyXPCard = () => {
         {/* Stats section with game references */}
         <div className="z-[10] relative mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 text-center pt-16 md:pt-0">
           <div className="glass-effect rounded-2xl p-8">
-            <div className="text-4xl font-bold gradient-text mb-2">10%</div>
+            <div className="text-4xl font-bold gradient-text mb-2">3%</div>
             <div className="text-gray-300">최대 캐시백률</div>
             <div className="text-xs text-gaming-purple mt-1">💎 전설급 리워드</div>
           </div>

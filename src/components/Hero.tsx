@@ -146,7 +146,7 @@ const Hero = () => {
               Steam, PlayStation, Riot, 구글플레이에서
             </h2>
             <p className="text-3xl md:text-5xl font-bold gradient-text">
-              최대 10% 캐시백
+              최대 3% 캐시백
             </p>
             <p className="text-lg text-gray-300 mt-2">
               RP 충전도, V-Buck 구매도, 모든 게임 결제에서 리워드! 💰
